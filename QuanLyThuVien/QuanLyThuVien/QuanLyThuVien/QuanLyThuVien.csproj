@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6E7D36FB-5A61-4673-BC31-03363BE9D2EB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyThuVien</RootNamespace>
+    <AssemblyName>QuanLyThuVien</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormADMINtaikhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormADMINtaikhoan.Designer.cs">
+      <DependentUpon>FormADMINtaikhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDoanhThu.Designer.cs">
+      <DependentUpon>FormDoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKhachHang.Designer.cs">
+      <DependentUpon>FormKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMAIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMAIN.Designer.cs">
+      <DependentUpon>FormMAIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMUONSACH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMUONSACH.Designer.cs">
+      <DependentUpon>FormMUONSACH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNHANVIEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNHANVIEN.Designer.cs">
+      <DependentUpon>FormNHANVIEN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPHIEUMUONKHACHHANG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPHIEUMUONKHACHHANG.Designer.cs">
+      <DependentUpon>FormPHIEUMUONKHACHHANG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormREGISTER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormREGISTER.Designer.cs">
+      <DependentUpon>FormREGISTER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSACH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSACH.Designer.cs">
+      <DependentUpon>FormSACH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formsach\FormCHITIETSACH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formsach\FormCHITIETSACH.Designer.cs">
+      <DependentUpon>FormCHITIETSACH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formsach\FormCAPNHATSACH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formsach\FormCAPNHATSACH.Designer.cs">
+      <DependentUpon>FormCAPNHATSACH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formsach\FormTIMKIEMSACH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formsach\FormTIMKIEMSACH.Designer.cs">
+      <DependentUpon>FormTIMKIEMSACH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFORGOTPASS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFORGOTPASS.Designer.cs">
+      <DependentUpon>FormFORGOTPASS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTAIKHOAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTAIKHOAN.Designer.cs">
+      <DependentUpon>FormTAIKHOAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTHEKHACHHANG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTHEKHACHHANG.Designer.cs">
+      <DependentUpon>FormTHEKHACHHANG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTHEKHACHHANGDEMO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTHEKHACHHANGDEMO.Designer.cs">
+      <DependentUpon>FormTHEKHACHHANGDEMO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiayTo\FormCAPNHATKHO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiayTo\FormCAPNHATKHO.Designer.cs">
+      <DependentUpon>FormCAPNHATKHO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiayTo\FormDANHSACHCHOPHIEUMUON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiayTo\FormDANHSACHCHOPHIEUMUON.Designer.cs">
+      <DependentUpon>FormDANHSACHCHOPHIEUMUON.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiayTo\FormDANHSACHCHOPHIEUTRA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiayTo\FormDANHSACHCHOPHIEUTRA.Designer.cs">
+      <DependentUpon>FormDANHSACHCHOPHIEUTRA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiayTo\FormDANHSACHPHIEUMUON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiayTo\FormDANHSACHPHIEUMUON.Designer.cs">
+      <DependentUpon>FormDANHSACHPHIEUMUON.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiayTo\FormGIAYTO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiayTo\FormGIAYTO.Designer.cs">
+      <DependentUpon>FormGIAYTO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiayTo\FormKHOSACH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiayTo\FormKHOSACH.Designer.cs">
+      <DependentUpon>FormKHOSACH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiayTo\FormLAYSACH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiayTo\FormLAYSACH.Designer.cs">
+      <DependentUpon>FormLAYSACH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiayTo\FormNGAYGIAHAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiayTo\FormNGAYGIAHAN.Designer.cs">
+      <DependentUpon>FormNGAYGIAHAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiayTo\FormPHIEUCHI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiayTo\FormPHIEUCHI.Designer.cs">
+      <DependentUpon>FormPHIEUCHI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiayTo\FormPHIEUCHIDEMO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiayTo\FormPHIEUCHIDEMO.Designer.cs">
+      <DependentUpon>FormPHIEUCHIDEMO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiayTo\FormPHIEUGIAHAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiayTo\FormPHIEUGIAHAN.Designer.cs">
+      <DependentUpon>FormPHIEUGIAHAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiayTo\FormPHIEUGIAHANDEMO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiayTo\FormPHIEUGIAHANDEMO.Designer.cs">
+      <DependentUpon>FormPHIEUGIAHANDEMO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiayTo\FormPHIEUMUONDEMO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiayTo\FormPHIEUMUONDEMO.Designer.cs">
+      <DependentUpon>FormPHIEUMUONDEMO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiayTo\FormPHIEUNHAPSACH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiayTo\FormPHIEUNHAPSACH.Designer.cs">
+      <DependentUpon>FormPHIEUNHAPSACH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiayTo\FormPHIEUNHAPSACH11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiayTo\FormPHIEUNHAPSACH11.Designer.cs">
+      <DependentUpon>FormPHIEUNHAPSACH11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiayTo\FormPHIEUPHAT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiayTo\FormPHIEUPHAT.Designer.cs">
+      <DependentUpon>FormPHIEUPHAT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiayTo\FormPHIEUPHATDEMO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiayTo\FormPHIEUPHATDEMO.Designer.cs">
+      <DependentUpon>FormPHIEUPHATDEMO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiayTo\FormPHIEUTHANHLYSACH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiayTo\FormPHIEUTHANHLYSACH.Designer.cs">
+      <DependentUpon>FormPHIEUTHANHLYSACH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiayTo\FormPHIEUTHU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiayTo\FormPHIEUTHU.Designer.cs">
+      <DependentUpon>FormPHIEUTHU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiayTo\FormPHIEUTRA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiayTo\FormPHIEUTRA.Designer.cs">
+      <DependentUpon>FormPHIEUTRA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiayTo\FormPHIEUTRADEMO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiayTo\FormPHIEUTRADEMO.Designer.cs">
+      <DependentUpon>FormPHIEUTRADEMO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiayTo\FormTHANHLYSACH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiayTo\FormTHANHLYSACH.Designer.cs">
+      <DependentUpon>FormTHANHLYSACH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiayTo\FormPHIEUTHUDEMO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiayTo\FormPHIEUTHUDEMO.Designer.cs">
+      <DependentUpon>FormPHIEUTHUDEMO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiayTo\FormTHEMSACHKHO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiayTo\FormTHEMSACHKHO.Designer.cs">
+      <DependentUpon>FormTHEMSACHKHO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SETTING\FormCHANGEPASS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETTING\FormCHANGEPASS.Designer.cs">
+      <DependentUpon>FormCHANGEPASS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETTING\FormDELETEACC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETTING\FormDELETEACC.Designer.cs">
+      <DependentUpon>FormDELETEACC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SETTING\FormSETTING.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SETTING\FormSETTING.Designer.cs">
+      <DependentUpon>FormSETTING.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormADMINtaikhoan.resx">
+      <DependentUpon>FormADMINtaikhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDoanhThu.resx">
+      <DependentUpon>FormDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKhachHang.resx">
+      <DependentUpon>FormKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMAIN.resx">
+      <DependentUpon>FormMAIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMUONSACH.resx">
+      <DependentUpon>FormMUONSACH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNHANVIEN.resx">
+      <DependentUpon>FormNHANVIEN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPHIEUMUONKHACHHANG.resx">
+      <DependentUpon>FormPHIEUMUONKHACHHANG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormREGISTER.resx">
+      <DependentUpon>FormREGISTER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSACH.resx">
+      <DependentUpon>FormSACH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formsach\FormCHITIETSACH.resx">
+      <DependentUpon>FormCHITIETSACH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formsach\FormCAPNHATSACH.resx">
+      <DependentUpon>FormCAPNHATSACH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formsach\FormTIMKIEMSACH.resx">
+      <DependentUpon>FormTIMKIEMSACH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFORGOTPASS.resx">
+      <DependentUpon>FormFORGOTPASS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTAIKHOAN.resx">
+      <DependentUpon>FormTAIKHOAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTHEKHACHHANG.resx">
+      <DependentUpon>FormTHEKHACHHANG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTHEKHACHHANGDEMO.resx">
+      <DependentUpon>FormTHEKHACHHANGDEMO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiayTo\FormCAPNHATKHO.resx">
+      <DependentUpon>FormCAPNHATKHO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiayTo\FormDANHSACHCHOPHIEUMUON.resx">
+      <DependentUpon>FormDANHSACHCHOPHIEUMUON.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiayTo\FormDANHSACHCHOPHIEUTRA.resx">
+      <DependentUpon>FormDANHSACHCHOPHIEUTRA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiayTo\FormDANHSACHPHIEUMUON.resx">
+      <DependentUpon>FormDANHSACHPHIEUMUON.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiayTo\FormGIAYTO.resx">
+      <DependentUpon>FormGIAYTO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiayTo\FormKHOSACH.resx">
+      <DependentUpon>FormKHOSACH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiayTo\FormLAYSACH.resx">
+      <DependentUpon>FormLAYSACH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiayTo\FormNGAYGIAHAN.resx">
+      <DependentUpon>FormNGAYGIAHAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiayTo\FormPHIEUCHI.resx">
+      <DependentUpon>FormPHIEUCHI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiayTo\FormPHIEUCHIDEMO.resx">
+      <DependentUpon>FormPHIEUCHIDEMO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiayTo\FormPHIEUGIAHAN.resx">
+      <DependentUpon>FormPHIEUGIAHAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiayTo\FormPHIEUGIAHANDEMO.resx">
+      <DependentUpon>FormPHIEUGIAHANDEMO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiayTo\FormPHIEUMUONDEMO.resx">
+      <DependentUpon>FormPHIEUMUONDEMO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiayTo\FormPHIEUNHAPSACH.resx">
+      <DependentUpon>FormPHIEUNHAPSACH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiayTo\FormPHIEUNHAPSACH11.resx">
+      <DependentUpon>FormPHIEUNHAPSACH11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiayTo\FormPHIEUPHAT.resx">
+      <DependentUpon>FormPHIEUPHAT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiayTo\FormPHIEUPHATDEMO.resx">
+      <DependentUpon>FormPHIEUPHATDEMO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiayTo\FormPHIEUTHANHLYSACH.resx">
+      <DependentUpon>FormPHIEUTHANHLYSACH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiayTo\FormPHIEUTHU.resx">
+      <DependentUpon>FormPHIEUTHU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiayTo\FormPHIEUTRA.resx">
+      <DependentUpon>FormPHIEUTRA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiayTo\FormPHIEUTRADEMO.resx">
+      <DependentUpon>FormPHIEUTRADEMO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiayTo\FormTHANHLYSACH.resx">
+      <DependentUpon>FormTHANHLYSACH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiayTo\FormPHIEUTHUDEMO.resx">
+      <DependentUpon>FormPHIEUTHUDEMO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiayTo\FormTHEMSACHKHO.resx">
+      <DependentUpon>FormTHEMSACHKHO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SETTING\FormCHANGEPASS.resx">
+      <DependentUpon>FormCHANGEPASS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETTING\FormDELETEACC.resx">
+      <DependentUpon>FormDELETEACC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETTING\FormSETTING.resx">
+      <DependentUpon>FormSETTING.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
